@@ -36,7 +36,7 @@ namespace bv_msvc
             m_ct_number = registry.GetClassificationType(PredefinedClassificationTypeNames.Number);
             m_ct_atom = registry.GetClassificationType(PredefinedClassificationTypeNames.String);
 
-            m_regex = new Regex(@"(\#[^\n]*)|\b(interface|struct|enum|module|def|use|inst|always|on|or|and|posedge|negedge|if|else|switch)\b|(\d+'[bodh][_0-9a-fA-Fxz?]+|\d+)|'[a-zA-Z_][a-zA-Z_0-9]*");
+            m_regex = new Regex(@"(\#[^\n]*)|\b(interface|struct|enum|module|def|use|inst|always|on|or|and|posedge|negedge|if|else|switch|wait|assert)\b|(\d+'[bodh][_0-9a-fA-Fxz?]+|\d+)|'[a-zA-Z_][a-zA-Z_0-9]*");
         }
 
         private void Reclassify()
